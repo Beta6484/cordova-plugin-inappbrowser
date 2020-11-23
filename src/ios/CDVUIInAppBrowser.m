@@ -629,11 +629,7 @@ static CDVUIInAppBrowser* instance = nil;
         _userAgent = userAgent;
         _prevUserAgent = prevUserAgent;
         _browserOptions = browserOptions;
-#ifdef __CORDOVA_4_0_0
-        _webViewDelegate = [[CDVUIWebViewDelegate alloc] initWithDelegate:self];
-#else
         _webViewDelegate = [[CDVWebViewDelegate alloc] initWithDelegate:self];
-#endif
 
         [self createViews];
     }
