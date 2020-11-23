@@ -20,7 +20,7 @@
 #import "CDVInAppBrowser.h"
 #import "CDVInAppBrowserOptions.h"
 #if !WK_WEB_VIEW_ONLY
-#import "CDVUIInAppBrowser.h"
+#import "CDVWKInAppBrowser.h"
 #endif
 #import "CDVWKInAppBrowser.h"
 #import <Cordova/CDVPluginResult.h>
@@ -57,7 +57,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] open:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] open:command];
+          [[CDVWKInAppBrowser getInstance] open:command];
       }
     #endif
 }
@@ -70,7 +70,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] close:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] close:command];
+          [[CDVWKInAppBrowser getInstance] close:command];
       }
     #endif
 }
@@ -84,7 +84,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] show:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] show:command];
+          [[CDVWKInAppBrowser getInstance] show:command];
       }
     #endif
 }
@@ -97,7 +97,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] hide:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] hide:command];
+          [[CDVWKInAppBrowser getInstance] hide:command];
       }
     #endif
 }
@@ -111,7 +111,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] injectScriptCode:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] injectScriptCode:command];
+          [[CDVWKInAppBrowser getInstance] injectScriptCode:command];
       }
     #endif
 }
@@ -124,7 +124,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] injectScriptFile:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] injectScriptFile:command];
+          [[CDVWKInAppBrowser getInstance] injectScriptFile:command];
       }
     #endif
 }
@@ -137,7 +137,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] injectStyleCode:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] injectStyleCode:command];
+          [[CDVWKInAppBrowser getInstance] injectStyleCode:command];
       }
     #endif
 }
@@ -150,7 +150,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] injectStyleFile:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] injectStyleFile:command];
+          [[CDVWKInAppBrowser getInstance] injectStyleFile:command];
       }
     #endif
 }
@@ -163,7 +163,7 @@
       if(self.usewkwebview){
           [[CDVWKInAppBrowser getInstance] loadAfterBeforeload:command];
       }else{
-          [[CDVUIInAppBrowser getInstance] loadAfterBeforeload:command];
+          [[CDVWKInAppBrowser getInstance] loadAfterBeforeload:command];
       }
     #endif
 }
